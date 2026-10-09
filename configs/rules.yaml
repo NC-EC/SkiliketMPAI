@@ -1,0 +1,18 @@
+# Motor de reglas normativas (RM-04, RF-REC-01/02/05/06)
+# Cada regla DEBE tener: id, variable, condicion, severidad, recomendacion, cita.
+# No agregar reglas con umbrales de memoria: deben venir de la norma real,
+# leída y confirmada en la Semana 7 (ver CLAUDE.md sección 6).
+#
+# Fuentes candidatas (por confirmar): ASHRAE, NOM-025-STPS, OMS, EPA.
+# Plantilla de ejemplo (comentada, NO es una regla real):
+#
+# reglas:
+#   - id: "TODO-ID-01"
+#     variable: "TODO"
+#     condicion: "TODO (ej. '> umbral')"
+#     umbral: null
+#     severidad: "TODO"
+#     recomendacion: "TODO (solo salud física/ambiental, nunca diagnóstico médico - RM-03)"
+#     cita: "TODO (documento, sección o tabla exacta)"
+
+reglas: []

@@ -1,0 +1,34 @@
+# Configuración del pipeline (RNF-01, RNF-04: nada hardcodeado en el código)
+# TODO: completar con decisiones reales de las Semanas 7-8. No usar valores de ejemplo
+# como si fueran definitivos.
+
+seed: 42  # TODO [POR CONFIRMAR]: fijar semilla global del experimento
+
+variables:
+  - co2
+  - temperatura
+  - humedad
+  - tvoc
+  - ruido
+  - radiacion_uv
+  - aqi_uba
+
+horizonte: null  # TODO [POR CONFIRMAR]: horizonte de predicción (Semana 7/8)
+frecuencia_remuestreo: null  # TODO [POR CONFIRMAR]: frecuencia común de remuestreo
+
+particion:
+  # TODO [POR CONFIRMAR]: fechas de corte train/test, estrictamente temporales (RF-MOD-04, RF-PRE-05)
+  train_hasta: null
+  test_desde: null
+
+rutas:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  modelos: models
+  figuras: reports/figures
+  tablas: reports/tables
+
+modelos:
+  baseline: null  # TODO [POR CONFIRMAR]: SARIMA o Prophet (Semana 8)
+  deep_learning: pytorch  # default según CLAUDE.md sección 7; cambiar y documentar en docs/decisiones.md si no

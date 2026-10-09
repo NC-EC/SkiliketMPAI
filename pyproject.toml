@@ -1,0 +1,16 @@
+[project]
+name = "skiliket-eq9-alerta-predictiva"
+version = "0.1.0"
+description = "Modelo predictivo de IA para alerta ambiental temprana - SKILIKET Living Lab, Equipo 9"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/skiliket_eq9"]
